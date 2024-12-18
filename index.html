@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>promise concept in js</title>
+    <link rel="icon" href="https://images.squarespace-cdn.com/content/v1/5e426885b4d1be536ef32393/040c2cd2-1fea-4fad-9e2b-d87c495c5d11/Promise+Logo-02.png">
+</head>
+<body>
+    <script>
+        var pro = new Promise(function raghul(resolve,reject) {
+            let vl=false;
+            if(vl){
+                resolve("it done sucessfully!!");
+            }
+            else{
+                reject("fail to reach");
+            }
+        })
+        pro.then(function raghul(r){
+            document.write(r);   
+        })
+        pro.catch(function raghul(w){
+            document.write(w);
+        })
+    </script>
+</body>
+</html>
